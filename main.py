@@ -2,10 +2,10 @@
 
 
 def ispalindrome(p):
-
-    # votre code ici
-    
-    return False
+    for i in range(len(p)//2):
+        if p[i] != p[-i-1]:
+            return False
+    return True
 
 #### Fonction principale
 
